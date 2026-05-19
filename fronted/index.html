@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventario</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Sistema de Inventario</h1>
+
+        <div class="formulario">
+
+            <input type="hidden" id="id">
+
+            <input type="text" id="nombre" placeholder="Nombre del producto">
+
+            <input type="number" id="precio" placeholder="Precio">
+
+            <input type="number" id="stock" placeholder="Stock">
+
+            <input type="text" id="categoria" placeholder="Categoría">
+
+            <button onclick="guardarProducto()" class="btn-agregar">
+                Guardar Producto
+            </button>
+
+        </div>
+
+        <table>
+
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Precio</th>
+                    <th>Stock</th>
+                    <th>Categoría</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+
+            <tbody id="tabla-productos">
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>

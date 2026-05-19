@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background: #f4f4f4;
+    padding: 30px;
+}
+
+.container{
+    max-width: 1000px;
+    margin: auto;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.formulario{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+input{
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button{
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-agregar{
+    background: green;
+    color: white;
+}
+
+.btn-editar{
+    background: orange;
+}
+
+.btn-eliminar{
+    background: crimson;
+    color: white;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th,
+table td{
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+}
+
+table th{
+    background: #333;
+    color: white;
+}
+
+.acciones{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
